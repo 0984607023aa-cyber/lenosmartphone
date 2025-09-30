@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LenoSmartphone</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+        :root {
+            --bg-color: #121212;
+            --text-color: #f0f0f0;
+            --accent-color: #e0b0ff; /* สีม่วงอ่อน */
+            --border-color: #333;
+            --card-bg: #1e1e1e;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .header nav a {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 300;
+            transition: color 0.3s ease;
+        }
+
+        .header nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .hero-banner {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero-banner img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-top: 0;
+        }
+
+        .product-card p {
+            font-size: 1.1rem;
+            color: #ccc;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 15px;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #c790e8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <h1>LenoSmartphone</h1>
+        <nav>
+            <a href="home lenosmartphone.html">หน้าหลัก</a>
+            <a href="ออกใหม่.html">มือถือ</a>
+            <a href="home lenosmartphone.html">สินค้าทั้งหมด</a>
+            <a href="ยอดนิยม.html">ยอดนิยม</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-banner">
+            <img src="img/ลด7ปี.png" alt="โปรโมชั่นลด 7 ปี">
+        </section>
+        
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="img/realme-13-Pro-Monet-Pruple.jpg" alt="realme-13 5G">
+                <h2>realme-13 5G</h2>
+                <p>ราคา 8,999 บาท</p>
+                <a href="realme-13.html" class="buy-button">เลือกซื้อ</a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/e437ed_0fe947bb530a4af8985d5ea0af31a064~mv2.avif" alt="OPPO A17">
+                <h2>OPPO A17</h2>
+                <p>ราคา 5,199 บาท</p>
+                <a href="OPPO A17.html" class="buy-button">เลือกซื้อ</a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/Oppo-A57-Lilac.jpg" alt="oppo a57">
+                <h2>oppo a57</h2>
+                <p>ราคา 5,499 บาท</p>
+                <a href="oppo a57.html" class="buy-button">เลือกซื้อ</a>
+            </div>
+
+            <div class="product-card">
+                <img src="img/original-1725683991934.png" alt="realme note 60">
+                <h2>realme note 60</h2>
+                <p>ราคา 3,499 บาท</p>
+                <a href="realme note 60.html" class="buy-button">เลือกซื้อ</a>
+            </div>
+        </section>
+    </main>
+</div>
+<div class="spec-image">
+            <center><img src="img/thum.jpg" alt="Specification details"></center>
+        </div>
+
+</body>
+</html>
