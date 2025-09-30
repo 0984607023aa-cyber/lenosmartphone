@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าสั่งซื้อสินค้า</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .product-item {
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .product-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .total-price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: right;
+            margin-top: 1rem;
+            color: #2c3e50;
+        }
+        button {
+            width: 100%;
+            padding: 1rem;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>หน้าสั่งซื้อสินค้า</h1>
+        <form id="orderForm">
+            <label for="name">ชื่อ-นามสกุล:</label>
+            <input type="text" id="name" name="name" required>
+            
+		<label for="name">เบอร์โทร:</label>
+            <input type="text" id="name" name="name" required>
+            
+		<label for="address">ที่อยู่จัดส่ง:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <button type="submit">ยืนยันการสั่งซื้อ</button>
+        
+	</form>
+    </div>
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // ป้องกันการรีเฟรชหน้าเว็บเมื่อกดส่งข้อมูล
+
+            // โค้ดส่วนนี้จะทำงานเมื่อผู้ใช้กดปุ่ม "ยืนยันการสั่งซื้อ"
+            // สามารถนำไปใช้ส่งข้อมูลไปยังเซิร์ฟเวอร์หรือแสดงข้อความยืนยันได้
+            alert('คำสั่งซื้อของคุณได้รับการยืนยันเรียบร้อยแล้ว');
+            
+            // ในชีวิตจริงจะมีการนำข้อมูลจากฟอร์มไปใช้ต่อไป เช่น
+            // const name = document.getElementById('name').value;
+            // console.log("ชื่อ:", name);
+        });
+    </script>
+</body>
+</html>
